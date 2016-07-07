@@ -1,0 +1,10 @@
+#OSX
+
+.DS_Store
+
+#NODEJS
+
+*/node_modules
+
+#OTHER
+*.zip

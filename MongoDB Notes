@@ -1,0 +1,27 @@
+MongoDB Notes:
+--------------
+
+What is MongoDB?
+    -A non-relational (no tables) data store for JSON documents
+    -JSON - JavaScript Object Notation ex: {"key": "value"}, {"name": "Raymond"}
+    -No joins, or transactions in order to retain horizontal scalability (increasing commodity hardware)
+
+Mongo Shell
+    -Administrative shell written in C++ on top of V8 for performing admin tasks (checking config, running queries, etc.)
+    -Makes request to MongoDB
+
+Install / Download: www.mongodb.org/downloads
+
+Starting MongoDB
+    -Run "./mongo" this will start the mongo server from within the same directory
+    -Runs on port 27017 by default
+
+Synchronous vs Asynchronous
+    -Mongo Shell is synchronous and will block all subsequent operations until the current operation completes
+    -The NodeJS MongoDB client is asynchronous and will allow subsequent operations to proceed
+
+Mongod server which listens for incoming connections to the MongoDB instance.
+    -Expects BSON (Binary JSON)
+
+Driver
+    -library in a specific language that handles connecting to / communicating with MongoDB
