@@ -25,3 +25,10 @@ Mongod server which listens for incoming connections to the MongoDB instance.
 
 Driver
     -library in a specific language that handles connecting to / communicating with MongoDB
+
+Schema Design:
+    -Embedding Sub-documents
+    -Id references
+
+    Considerations
+        -A single mongodb document can not exceed 16MB

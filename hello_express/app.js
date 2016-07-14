@@ -26,13 +26,13 @@ app.use(errorHandler);
 
 //Express Routes
 
-app.get('/:firstName', function (req, res, next) {
-    var firstName = req.params.firstName;//URL parameter
-    console.log('First Name passed: ', firstName);//
-    var middleName = req.query.middleName;//query parameter 1
-    var lastName = req.query.lastName;//... 2
-    res.render('hello', {firstName: firstName, middleName: middleName, lastName: lastName});
-});
+// app.get('/:firstName', function (req, res, next) {
+//     var firstName = req.params.firstName;//URL parameter
+//     console.log('First Name passed: ', firstName);//
+//     var middleName = req.query.middleName;//query parameter 1
+//     var lastName = req.query.lastName;//... 2
+//     res.render('hello', {firstName: firstName, middleName: middleName, lastName: lastName});
+// });
 
 app.get('/', function (req, res) {//handle request
     res.render('fruitPicker', {'fruits': ['apple', 'orange', 'banana', 'peach']});
